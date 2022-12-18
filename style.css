@@ -1,0 +1,26 @@
+@import "reset.css";
+
+@import "status-bar.css";
+@import "login.css";
+@import "friends.css";
+@import "screen-header.css";
+@import "user-component.css";
+@import "nav.css";
+@import "chats.css";
+
+* {
+  box-sizing: border-box;
+  color: #a897de;
+}
+body {
+  height: 100%;
+  background-color: black;
+}
+.screen-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeefef;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
