@@ -1,0 +1,150 @@
+.album {
+  padding: 10px 20px;
+}
+.album-header {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin: 20px 20px;
+}
+
+.album-row {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.album-row__img img {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.album-row__img {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 5px;
+}
+
+.album-row__img span {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.album-row:first-child .album-row__img:first-child:hover img {
+  animation: viewImage1 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:first-child .album-row__img:nth-child(2):hover img {
+  animation: viewImage2 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:first-child > .album-row__img:nth-child(3):hover > img {
+  animation: viewImage3 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:first-child .album-row__img:last-child:hover img {
+  animation: viewImage4 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:last-child .album-row__img:first-child:hover img {
+  animation: viewImage5 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:last-child .album-row__img:nth-child(2):hover img {
+  animation: viewImage6 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:last-child .album-row__img:nth-child(3):hover img {
+  animation: viewImage7 0.5s linear forwards;
+  z-index: 90;
+}
+
+.album-row:last-child .album-row__img:last-child:hover img {
+  animation: viewImage8 0.5s linear forwards;
+  z-index: 90;
+}
+
+@keyframes viewImage1 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(40%, 30%);
+  }
+}
+
+@keyframes viewImage2 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(13%, 28%);
+  }
+}
+
+@keyframes viewImage3 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(-13%, 28%);
+  }
+}
+
+@keyframes viewImage4 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(-39%, 28%);
+  }
+}
+
+@keyframes viewImage5 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(40%, 0%);
+  }
+}
+@keyframes viewImage6 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(14%, 0%);
+  }
+}
+@keyframes viewImage7 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(-13%, 0);
+  }
+}
+@keyframes viewImage8 {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(6.5) translate(-39%, 0%);
+  }
+}

@@ -1,0 +1,123 @@
+.recommended-friends {
+  padding: 20px 0px;
+  margin: 0 20px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.recommended-friends__text {
+  font-size: 20px;
+  opacity: 0.5;
+  text-align: center;
+  margin: 100px 0;
+}
+
+.open-chat__members img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-chat__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.open-chat__header {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin: 20px 20px;
+}
+
+.open-chat__header h5 {
+  opacity: 0.5;
+}
+
+.open-chat__row {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.open-chat__tag {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.open-chat__members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.bar {
+  width: 1px;
+  height: 10px;
+  background-color: #c2c5f0;
+  margin: 0 5px;
+}
+
+.open-chat__status {
+  color: tomato;
+}
+
+.open-chat__photo {
+  position: relative;
+}
+
+.open-chat__photo-count {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.open-chat__photo-count i,
+.open-chat__photo-count span {
+  color: white;
+}
+
+.open-chat__photo-count span {
+  margin-left: 5px;
+}
+
+.open-chat__photo-count:hover i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: none;
+    color: white;
+  }
+  50% {
+    transform: scale(2);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}

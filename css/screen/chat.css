@@ -1,0 +1,212 @@
+.chat-screen {
+  height: 300vh;
+}
+
+.chat .setting-header {
+  background-color: rgba(238, 239, 239);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.chat-screen {
+  padding: 0 20px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: rgba(152, 161, 224, 0.5);
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.message__name {
+  margin-bottom: 8px;
+}
+
+.message__info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.message__time {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.message__text {
+  background-color: rgba(228, 227, 240);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+}
+.message-row__own {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.message-row__own .message__info {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message-row__own .message__text {
+  background-color: rgba(225, 228, 41);
+  border-top-right-radius: 0;
+  border-top-left-radius: 12px;
+  margin-left: 5px;
+}
+
+.chatting {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.chatting .chatting__column:first-child {
+  width: 10%;
+}
+.chatting .chatting__column:last-child {
+  position: relative;
+  width: 90%;
+}
+
+.chatting .chatting__column:last-child input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(168, 151, 222, 0.2);
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.chatting__column:last-child > .fa-face-smile {
+  opacity: 0.5;
+  right: 50px;
+  top: 17px;
+}
+.chatting__column:last-child .fa-face-smile,
+.chatting__column:last-child button {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+.chatting__column:last-child .fa-face-smile {
+  right: 45px;
+  top: 18px;
+}
+
+.chatting__column button {
+  background-color: rgba(225, 228, 41);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.chatting__column input:focus,
+.chatting__column button:active {
+  outline: none;
+}
+
+.chat__timestamp {
+  animation: timestampAnimation 0.7s ease-in-out forwards;
+}
+
+.message-row:nth-child(2) {
+  opacity: 0;
+  animation: leftshowchatting 0.5s ease-in-out forwards;
+}
+.message-row:nth-child(3) {
+  opacity: 0;
+  animation: rightshowchatting 0.5s ease-in-out forwards;
+}
+.message-row:nth-child(4) {
+  opacity: 0;
+  animation: leftshowchatting 0.5s ease-in-out forwards;
+}
+
+@keyframes timestampAnimation {
+  from {
+    transform: translateY(-70px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes leftshowchatting {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rightshowchatting {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.message-row:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.message-row:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.chatting .chatting__column:first-child,
+.chatting .fa-face-smile,
+.chatting button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chatting:focus-within .chatting__column:first-child,
+.chatting:focus-within .fa-face-smile,
+.chatting:focus-within button {
+  opacity: 0;
+}
+/* 왜 width가 100이하가 아닌 100이상이죠 ㅠㅠ 전 ㅠㅠ */
+.chatting:focus-within {
+  width: 115vw;
+  transform: translateX(-5%) translateY(80px);
+}
+.chatting:focus-within input {
+  transform: translateY(-80px);
+}

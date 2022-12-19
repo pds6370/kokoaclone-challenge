@@ -1,0 +1,73 @@
+.icon-row,
+.find-icon__row {
+  margin: 50px 20px 0 20px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.icon-row__icon {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-row__icon:hover {
+  animation: sizeupicons 0.2s ease-in-out forwards;
+}
+
+.icon-row__icon i {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  font-size: 12px;
+  margin-top: 18px;
+}
+.find-icon__row {
+  margin-top: 20px;
+}
+.find-icon__row span {
+  margin-top: 5px;
+}
+
+.find-icon__row .icon-row__icon {
+  padding: 10px 0;
+}
+
+.find-icon__row .icon-row__icon i {
+  margin-bottom: 8px;
+}
+.icon-row__icon:nth-child(2) {
+  position: relative;
+}
+.icon-row__icon .fa-map {
+  position: relative;
+}
+.gear {
+  position: relative;
+}
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: tomato;
+  border-radius: 50%;
+  right: 5px;
+  top: -5px;
+}
+
+.fa-map .dot {
+  right: -10px;
+}
+
+@keyframes sizeupicons {
+  0% {
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

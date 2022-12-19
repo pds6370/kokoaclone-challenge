@@ -1,18 +1,18 @@
 .screen-header__topic {
-  margin-top: 60px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
 
-.screen-header_title {
+.screen-header__title {
   font-size: 30px;
   font-weight: 600;
 }
 
 .screen-header__icons i {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .screen-header__ad {
   margin: 20px 20px;
@@ -53,4 +53,46 @@
 .screen-header__ad-column > h2 {
   font-size: 13px;
   opacity: 0.5;
+}
+
+.fa-gear:hover {
+  animation: rotategear 3s linear infinite;
+}
+
+.fa-magnifying-glass:hover {
+  animation: sizeupicons 0.2s ease-in-out forwards;
+}
+
+.fa-comment-dots:hover {
+  animation: sizeupicons 0.2s ease-in-out forwards;
+}
+
+.fa-music:hover {
+  animation: VibrateMusic 0.4s ease-in-out infinite;
+}
+
+@keyframes VibrateMusic {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+  75% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
+
+@keyframes rotategear {
+  0% {
+  }
+  100% {
+    transform: rotateZ(360deg) scale(1.5);
+  }
 }
