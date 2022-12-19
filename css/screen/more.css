@@ -85,7 +85,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(40%, 30%);
+    transform: scale(5) translate(52%, 30%);
   }
 }
 
@@ -94,7 +94,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(13%, 28%);
+    transform: scale(5) translate(17%, 30%);
   }
 }
 
@@ -103,7 +103,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(-13%, 28%);
+    transform: scale(5) translate(-17%, 30%);
   }
 }
 
@@ -112,7 +112,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(-39%, 28%);
+    transform: scale(5) translate(-52%, 30%);
   }
 }
 
@@ -121,7 +121,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(40%, 0%);
+    transform: scale(5) translate(52%, -10%);
   }
 }
 @keyframes viewImage6 {
@@ -129,7 +129,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(14%, 0%);
+    transform: scale(5) translate(17%, -10%);
   }
 }
 @keyframes viewImage7 {
@@ -137,7 +137,7 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(-13%, 0);
+    transform: scale(5) translate(-18%, -10%);
   }
 }
 @keyframes viewImage8 {
@@ -145,6 +145,6 @@
     transform: none;
   }
   to {
-    transform: scale(6.5) translate(-39%, 0%);
+    transform: scale(5) translate(-53%, -10%);
   }
 }
