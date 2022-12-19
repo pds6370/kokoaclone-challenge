@@ -41,42 +41,42 @@
 }
 
 .album-row:first-child .album-row__img:first-child:hover img {
-  animation: viewImage1 0.5s linear forwards;
+  animation: viewImage1 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:first-child .album-row__img:nth-child(2):hover img {
-  animation: viewImage2 0.5s linear forwards;
+  animation: viewImage2 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:first-child > .album-row__img:nth-child(3):hover > img {
-  animation: viewImage3 0.5s linear forwards;
+  animation: viewImage3 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:first-child .album-row__img:last-child:hover img {
-  animation: viewImage4 0.5s linear forwards;
+  animation: viewImage4 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:last-child .album-row__img:first-child:hover img {
-  animation: viewImage5 0.5s linear forwards;
+  animation: viewImage5 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:last-child .album-row__img:nth-child(2):hover img {
-  animation: viewImage6 0.5s linear forwards;
+  animation: viewImage6 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:last-child .album-row__img:nth-child(3):hover img {
-  animation: viewImage7 0.5s linear forwards;
+  animation: viewImage7 0.3s linear forwards;
   z-index: 90;
 }
 
 .album-row:last-child .album-row__img:last-child:hover img {
-  animation: viewImage8 0.5s linear forwards;
+  animation: viewImage8 0.3s linear forwards;
   z-index: 90;
 }
 
